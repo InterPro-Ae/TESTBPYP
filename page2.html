@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritime Shipyard - Facilities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffd700;
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23517c9e" width="1200" height="400"/><path fill="%236b93b3" d="M0 300h1200v100H0z"/><rect fill="%23ffffff" x="100" y="150" width="80" height="120" opacity="0.3"/><rect fill="%23ffffff" x="300" y="120" width="100" height="150" opacity="0.25"/><rect fill="%23ffffff" x="600" y="140" width="120" height="130" opacity="0.3"/></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .facilities-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e3c72;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .facility-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .facility-image {
+            height: 200px;
+            background: linear-gradient(45deg, #2a5298, #1e3c72);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .facility-content {
+            padding: 2rem;
+        }
+
+        .facility-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e3c72;
+        }
+
+        .facility-specs {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .spec-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .spec-label {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .spec-value {
+            color: #2a5298;
+            font-weight: 600;
+        }
+
+        .capabilities {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .capability-item {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .capability-icon {
+            font-size: 3rem;
+            color: #2a5298;
+            margin-bottom: 1rem;
+        }
+
+        .equipment {
+            padding: 80px 0;
+        }
+
+        .equipment-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .equipment-category {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #2a5298;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .equipment-category h4 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .equipment-category ul {
+            list-style: none;
+        }
+
+        .equipment-category li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f3f4;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .equipment-category li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .equipment-category li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .mobile-menu {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .facilities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .capabilities-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .equipment-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">⚓ Maritime Shipyard</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Facilities</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our World-Class Facilities</h1>
+        </div>
+    </section>
+
+    <section class="facilities-section">
+        <div class="container">
+            <h2 class="section-title">Shipbuilding Infrastructure</h2>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-image">🏗️</div>
+                    <div class="facility-content">
+                        <h3>Main Construction Hall</h3>
+                        <p>Our primary shipbuilding facility featuring climate-controlled environment for year-round construction of vessels up to 300 meters in length.</p>
+                        <div class="facility-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">400m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">80m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">45m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Crane Capacity:</span>
+                                <span class="spec-value">600 tons</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">⚙️</div>
+                    <div class="facility-content">
+                        <h3>Dry Dock Complex</h3>
+                        <p>State-of-the-art dry dock facilities for ship repair, maintenance, and conversion projects with advanced pumping systems.</p>
+                        <div class="facility-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Number of Docks:</span>
+                                <span class="spec-value">3</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Length:</span>
+                                <span class="spec-value">350m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Beam:</span>
+                                <span class="spec-value">60m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Lifting Capacity:</span>
+                                <span class="spec-value">120,000 DWT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">🏭</div>
+                    <div class="facility-content">
+                        <h3>Steel Processing Plant</h3>
+                        <p>Integrated steel processing facility for cutting, forming, and preparing steel components with precision manufacturing capabilities.</p>
+                        <div class="facility-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Processing Area:</span>
+                                <span class="spec-value">15,000 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Plate Size:</span>
+                                <span class="spec-value">20m x 3m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cutting Technology:</span>
+                                <span class="spec-value">Plasma &amp; Laser</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Daily Capacity:</span>
+                                <span class="spec-value">200 tons</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">🔧</div>
+                    <div class="facility-content">
+                        <h3>Engine &amp; Machinery Shop</h3>
+                        <p>Specialized facility for engine installation, machinery fitting, and precision mechanical work with advanced testing equipment.</p>
+                        <div class="facility-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Workshop Area:</span>
+                                <span class="spec-value">8,000 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Overhead Crane:</span>
+                                <span class="spec-value">150 tons</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Test Benches:</span>
+                                <span class="spec-value">12 units</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Engine Size:</span>
+                                <span class="spec-value">50 MW</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">🎨</div>
+                    <div class="facility-content">
+                        <h3>Paint &amp; Finishing Hall</h3>
+                        <p>Environmental-controlled painting and finishing facility with advanced coating systems and quality control measures.</p>
+                        <div class="facility-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Booth Length:</span>
+                                <span class="spec-value">200m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Height Clearance:</span>
+                                <span class="spec-value">25m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Air Filtration:</span>
+                                <span class="spec-value">99.9% efficiency</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Coating Types:</span>
+                                <span class="spec-value">All Marine Grade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">🚢</div>
+                    <div class="facility-content">
+                        <h3>Launch &amp; Delivery Basin</h3>
+                        <p>Deep-water launch facility with direct access to open waters, featuring ship launch systems and sea trial capabilities.</p>
+                        <div class="facility-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Water Depth:</span>
+                                <span class="spec-value">15m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Launch Ways:</span>
+                                <span class="spec-value">2 slipways</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Launch Weight:</span>
+                                <span class="spec-value">80,000 tons</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Basin Area:</span>
+                                <span class="spec-value">25 hectares</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="capabilities">
+        <div class="container">
+            <h2 class="section-title">Core Capabilities</h2>
+            <div class="capabilities-grid">
+                <div class="capability-item">
+                    <div class="capability-icon">🏗️</div>
+                    <h4>New Construction</h4>
+                    <p>Complete vessel construction from keel laying to delivery</p>
+                </div>
+                <div class="capability-item">
+                    <div class="capability-icon">🔄</div>
+                    <h4>Ship Conversion</h4>
+                    <p>Vessel modifications and repurposing for new applications</p>
+                </div>
+                <div class="capability-item">
+                    <div class="capability-icon">⚡</div>
+                    <h4>Repairs &amp; Upgrades</h4>
+                    <p>Emergency repairs and scheduled maintenance programs</p>
+                </div>
+                <div class="capability-item">
+                    <div class="capability-icon">🧪</div>
+                    <h4>Testing &amp; Certification</h4>
+                    <p>Comprehensive testing and maritime certification services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment">
+        <div class="container">
+            <h2 class="section-title">Specialized Equipment</h2>
+            <div class="equipment-list">
+                <div class="equipment-category">
+                    <h4>Heavy Lifting Equipment</h4>
+                    <ul>
+                        <li>600-ton gantry crane</li>
+                        <li>Multiple 150-ton overhead cranes</li>
+                        <li>Mobile cranes up to 500 tons</li>
+                        <li>Specialized lifting beams</li>
+                        <li>Hydraulic jacking systems</li>
+                    </ul>
+                </div>
+                <div class="equipment-category">
+                    <h4>Cutting &amp; Welding</h4>
+                    <ul>
+                        <li>CNC plasma cutting tables</li>
+                        <li>Laser cutting systems</li>
+                        <li>Automated welding robots</li>
+                        <li>Submerged arc welding</li>
+                        <li>Orbital welding systems</li>
+                    </ul>
+                </div>
+                <div class="equipment-category">
+                    <h4>Quality Control</h4>
+                    <ul>
+                        <li>Non-destructive testing equipment</li>
+                        <li>3D scanning and measurement</li>
+                        <li>Ultrasonic testing systems</li>
+                        <li>Magnetic particle inspection</li>
+                        <li>Pressure testing facilities</li>
+                    </ul>
+                </div>
+                <div class="equipment-category">
+                    <h4>Support Systems</h4>
+                    <ul>
+                        <li>Advanced HVAC systems</li>
+                        <li>Industrial air compressors</li>
+                        <li>Electrical power distribution</li>
+                        <li>Fire suppression systems</li>
+                        <li>Environmental monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Maritime Shipyard. All rights reserved.</p>
+            <p>Contact: info@maritimeshipyard.com | +1 (555) 123-4567</p>
+        </div>
+    </footer>
+
+    <script src="https://lib.youware.com/youware-lib-consumer.1752562065.js" id="yourware-lib"></script><script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body></html>

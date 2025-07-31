@@ -1,18 +1,307 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><link rel="stylesheet" href="/_next/static/css/f9dd5edfd1e1e8c0.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/css/13ca95c7dfb03972.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-b7903889f9b8ede4.js"/><script src="/_next/static/chunks/52774a7f-bf7ba5c6983dd1e8.js" async=""></script><script src="/_next/static/chunks/4bd1b696-230c5849d845c5d3.js" async=""></script><script src="/_next/static/chunks/5760-98218840135170ae.js" async=""></script><script src="/_next/static/chunks/main-app-e0ce4277c5a191d7.js" async=""></script><script src="/_next/static/chunks/app/global-error-fa062e973ea99f3a.js" async=""></script><script src="/_next/static/chunks/3014691f-1222c0d344eae502.js" async=""></script><script src="/_next/static/chunks/2e5b0c64-149efd68b2c6114c.js" async=""></script><script src="/_next/static/chunks/2873-612bf94e2067ed39.js" async=""></script><script src="/_next/static/chunks/1418-061e8d847ac46a46.js" async=""></script><script src="/_next/static/chunks/1529-30d27d33d02638b1.js" async=""></script><script src="/_next/static/chunks/750-a9a9a045e4dbfc53.js" async=""></script><script src="/_next/static/chunks/app/layout-f269f47c730ad974.js" async=""></script><script src="/_next/static/chunks/6874-00d0f3cf17ffeb2e.js" async=""></script><script src="/_next/static/chunks/4277-d92de15dd73ae92a.js" async=""></script><script src="/_next/static/chunks/3921-c29fa5635057f34a.js" async=""></script><script src="/_next/static/chunks/770-6db852574d064351.js" async=""></script><script src="/_next/static/chunks/6766-f215184440a41046.js" async=""></script><script src="/_next/static/chunks/5649-818607a05118328d.js" async=""></script><script src="/_next/static/chunks/6581-413046209708dc9c.js" async=""></script><script src="/_next/static/chunks/6030-f31325ceda869e48.js" async=""></script><script src="/_next/static/chunks/5025-c3903149b4ec596d.js" async=""></script><script src="/_next/static/chunks/9360-f05039fab3fcb3d1.js" async=""></script><script src="/_next/static/chunks/app/project/%5Bslug%5D/page-ed504665f2dc7b96.js" async=""></script><script src="/_next/static/chunks/app/not-found-f3f6e65377f54f48.js" async=""></script><link rel="preload" href="https://lf3-data.volccdn.com/obj/data-static/log-sdk/collect/5.0/collect-rangers-v5.2.1.js" as="script"/><link rel="preload" href="https://accounts.google.com/gsi/client" as="script"/><link rel="preload" href="https://r.wdfl.co/rw.js" as="script"/><meta name="next-size-adjust" content=""/><link rel="icon" href="/favicon.ico" sizes="any"/><script>(self.__next_s=self.__next_s||[]).push([0,{"children":"\n          (function(win, export_obj) {\n            win['LogAnalyticsObject'] = export_obj;\n            if (!win[export_obj]) {\n              var _collect = function() {\n                _collect.q.push(arguments);\n              }\n              _collect.q = _collect.q || [];\n              win[export_obj] = _collect;                \n            }\n            win[export_obj].l = +new Date();\n          })(window, 'collectEvent');\n          ","id":"volcano-cache"}])</script><script>(self.__next_s=self.__next_s||[]).push(["https://lf3-data.volccdn.com/obj/data-static/log-sdk/collect/5.0/collect-rangers-v5.2.1.js",{"async":true}])</script><script>(self.__next_s=self.__next_s||[]).push([0,{"children":"\n          window.collectEvent('init', {\n            app_id: window?.location?.hostname === 'www.youware.com' ? 20003943 : 20003944,\n            channel_domain: 'https://gator.uba.ap-southeast-1.volces.com',\n            ab_channel_domain: 'https://tab.ab.ap-southeast-1.volces.com',\n            autotrack: {\n              pv: true,\n              click: false,\n              beat: false,\n            },\n            log: true,\n            enable_debug: false,\n            enable_ab_test: true,\n            enable_multilink: false,\n            enable_ab_visual: false,\n            enable_stay_duration: true,\n          });\n          ","id":"volcano-init"}])</script><script>(self.__next_s=self.__next_s||[]).push([0,{"children":"(function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');","id":"rewardful-queue"}])</script><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__variable_87c02c"><div hidden=""><!--$?--><template id="B:0"></template><!--/$--></div><!--$?--><template id="B:1"></template><!--/$--><script>requestAnimationFrame(function(){$RT=performance.now()});</script><script src="/_next/static/chunks/webpack-b7903889f9b8ede4.js" id="_R_" async=""></script><div hidden id="S:1"><template id="P:2"></template><template id="P:3"></template><!--$?--><template id="B:4"></template><div class="flex h-[100dvh] w-full items-center justify-center"><style>
-        @keyframes shimmer {
-          0% { transform: translateX(-80px) skewX(8deg); }
-          100% { transform: translateX(320px) skewX(8deg); }
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritime Shipyard - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .shimmer-rect {
-          animation: shimmer 2s infinite;
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
         }
-      </style><svg width="235" height="56" viewBox="0 0 235 56" xmlns="http://www.w3.org/2000/svg" style="display:block"><defs><mask id="mask-a-liner-gradient"><image href="/images/default-loading.svg" width="235" height="56" style="filter:brightness(5)"></image></mask><linearGradient id="gradient-a-liner-gradient" x1="0%" y1="0%" x2="100%" y2="30%"><stop offset="0%" stop-color="transparent"></stop><stop offset="10%" stop-color="rgba(255,255,255,0.3)"></stop><stop offset="40%" stop-color="rgba(255,255,255,1)"></stop><stop offset="60%" stop-color="rgba(255,255,255,1)"></stop><stop offset="90%" stop-color="rgba(255,255,255,0.3)"></stop><stop offset="100%" stop-color="transparent"></stop></linearGradient></defs><image href="/images/default-loading.svg" width="235" height="56"></image><g mask="url(#mask-a-liner-gradient)" style="mix-blend-mode:screen"><rect x="-80" y="0" width="100" height="56" fill="url(#gradient-a-liner-gradient)" class="shimmer-rect"></rect></g></svg></div><!--/$--></div><div hidden id="S:4"><template id="P:5"></template><!--$?--><template id="B:6"></template><!--/$--></div><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:I[46975,[],\"HTTPAccessFallbackBoundary\"]\n4:\"$Sreact.fragment\"\n5:I[87555,[],\"\"]\n6:I[31295,[],\"\"]\n8:I[59665,[],\"OutletBoundary\"]\na:I[74911,[],\"AsyncMetadataOutlet\"]\n10:I[59665,[],\"ViewportBoundary\"]\n12:I[59665,[],\"MetadataBoundary\"]\n13:\"$Sreact.suspense\"\n15:I[98385,[\"4219\",\"static/chunks/app/global-error-fa062e973ea99f3a.js\"],\"default\"]\n16:I[69243,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"\"]\n17:I[90395,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"GoogleAnalytics\"]\n18:I[45434,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"default\"]\n19:I[41895,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"EnvProvider\"]\n1a:I[99891,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"152"])</script><script>self.__next_f.push([1,"9\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"AnalyticsProvider\"]\n1b:I[53568,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"AuthCom\"]\n1d:I[53568,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"AuthProvider\"]\n1e:I[33943,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"NotificationProvider\"]\n1f:I[13960,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"SubscriptionCom\"]\n21:I[13960,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"Subscr"])</script><script>self.__next_f.push([1,"iptionProvider\"]\n22:I[28884,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"SettingsProvider\"]\n23:I[68192,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"PushProvider\"]\n24:I[60750,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"EmojiProvider\"]\n26:I[97389,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"default\"]\n27:I[88554,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"default\"]\n28:I[47139,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e"])</script><script>self.__next_f.push([1,"2067ed39.js\",\"1418\",\"static/chunks/1418-061e8d847ac46a46.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"7177\",\"static/chunks/app/layout-f269f47c730ad974.js\"],\"default\"]\n"])</script><script>self.__next_f.push([1,"2b:I[44748,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"6874\",\"static/chunks/6874-00d0f3cf17ffeb2e.js\",\"4277\",\"static/chunks/4277-d92de15dd73ae92a.js\",\"3921\",\"static/chunks/3921-c29fa5635057f34a.js\",\"770\",\"static/chunks/770-6db852574d064351.js\",\"6766\",\"static/chunks/6766-f215184440a41046.js\",\"5649\",\"static/chunks/5649-818607a05118328d.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"6581\",\"static/chunks/6581-413046209708dc9c.js\",\"6030\",\"static/chunks/6030-f31325ceda869e48.js\",\"5025\",\"static/chunks/5025-c3903149b4ec596d.js\",\"9360\",\"static/chunks/9360-f05039fab3fcb3d1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"9144\",\"static/chunks/app/project/%5Bslug%5D/page-ed504665f2dc7b96.js\"],\"Sidebar\"]\n"])</script><script>self.__next_f.push([1,"2c:I[86581,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"6874\",\"static/chunks/6874-00d0f3cf17ffeb2e.js\",\"4277\",\"static/chunks/4277-d92de15dd73ae92a.js\",\"3921\",\"static/chunks/3921-c29fa5635057f34a.js\",\"770\",\"static/chunks/770-6db852574d064351.js\",\"6766\",\"static/chunks/6766-f215184440a41046.js\",\"5649\",\"static/chunks/5649-818607a05118328d.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"6581\",\"static/chunks/6581-413046209708dc9c.js\",\"6030\",\"static/chunks/6030-f31325ceda869e48.js\",\"5025\",\"static/chunks/5025-c3903149b4ec596d.js\",\"9360\",\"static/chunks/9360-f05039fab3fcb3d1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"9144\",\"static/chunks/app/project/%5Bslug%5D/page-ed504665f2dc7b96.js\"],\"Header\"]\n"])</script><script>self.__next_f.push([1,"2d:I[93284,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"6874\",\"static/chunks/6874-00d0f3cf17ffeb2e.js\",\"4277\",\"static/chunks/4277-d92de15dd73ae92a.js\",\"3921\",\"static/chunks/3921-c29fa5635057f34a.js\",\"770\",\"static/chunks/770-6db852574d064351.js\",\"6766\",\"static/chunks/6766-f215184440a41046.js\",\"5649\",\"static/chunks/5649-818607a05118328d.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"6581\",\"static/chunks/6581-413046209708dc9c.js\",\"6030\",\"static/chunks/6030-f31325ceda869e48.js\",\"5025\",\"static/chunks/5025-c3903149b4ec596d.js\",\"9360\",\"static/chunks/9360-f05039fab3fcb3d1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"9144\",\"static/chunks/app/project/%5Bslug%5D/page-ed504665f2dc7b96.js\"],\"ErrorBoundary\"]\n"])</script><script>self.__next_f.push([1,"2e:I[59710,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"6874\",\"static/chunks/6874-00d0f3cf17ffeb2e.js\",\"4277\",\"static/chunks/4277-d92de15dd73ae92a.js\",\"3921\",\"static/chunks/3921-c29fa5635057f34a.js\",\"770\",\"static/chunks/770-6db852574d064351.js\",\"6766\",\"static/chunks/6766-f215184440a41046.js\",\"5649\",\"static/chunks/5649-818607a05118328d.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"6581\",\"static/chunks/6581-413046209708dc9c.js\",\"6030\",\"static/chunks/6030-f31325ceda869e48.js\",\"5025\",\"static/chunks/5025-c3903149b4ec596d.js\",\"9360\",\"static/chunks/9360-f05039fab3fcb3d1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"9144\",\"static/chunks/app/project/%5Bslug%5D/page-ed504665f2dc7b96.js\"],\"default\"]\n"])</script><script>self.__next_f.push([1,"2f:I[6874,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"6874\",\"static/chunks/6874-00d0f3cf17ffeb2e.js\",\"4277\",\"static/chunks/4277-d92de15dd73ae92a.js\",\"3921\",\"static/chunks/3921-c29fa5635057f34a.js\",\"770\",\"static/chunks/770-6db852574d064351.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"6581\",\"static/chunks/6581-413046209708dc9c.js\",\"6030\",\"static/chunks/6030-f31325ceda869e48.js\",\"4345\",\"static/chunks/app/not-found-f3f6e65377f54f48.js\"],\"\"]\n:HL[\"/_next/static/media/111c93f1bc244164-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/828e2958d60bafae-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/f9dd5edfd1e1e8c0.css\",\"style\"]\n:HL[\"/_next/static/css/13ca95c7dfb03972.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"b-oab_iN3uiv0cC1BM0og\",\"p\":\"\",\"c\":[\"\",\"project\",\"81l057p993?enter_from=share\u0026invite_code=GR4U3GLL2C\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"project\",{\"children\":[[\"slug\",\"81l057p993\",\"d\"],{\"children\":[\"__PAGE__?{\\\"enter_from\\\":\\\"share\\\",\\\"invite_code\\\":\\\"GR4U3GLL2C\\\"}\",{}]}]}],\"login\":[\"__DEFAULT__\",{}],\"subscription\":[\"__DEFAULT__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$L1\",\"c\",{\"notFound\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/f9dd5edfd1e1e8c0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/13ca95c7dfb03972.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],\"$L2\"],\"children\":[\"$0:f:0:1:1:props:notFound:0\",\"$L3\"]}],{\"children\":[\"project\",[\"$\",\"$4\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"slug\",\"81l057p993\",\"d\"],[\"$\",\"$4\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$4\",\"c\",{\"children\":[\"$L7\",null,[\"$\",\"$L8\",null,{\"children\":[\"$L9\",[\"$\",\"$La\",null,{\"promise\":\"$@b\"}]]}]]}],{},null,false]},[[\"$\",\"div\",\"l\",{\"className\":\"flex h-[100dvh] w-full items-center justify-center\",\"children\":[[\"$\",\"style\",null,{\"children\":\"\\n        @keyframes shimmer {\\n          0% { transform: translateX(-80px) skewX(8deg); }\\n          100% { transform: translateX(320px) skewX(8deg); }\\n        }\\n        .shimmer-rect {\\n          animation: shimmer 2s infinite;\\n        }\\n      \"}],[\"$\",\"svg\",null,{\"width\":\"235\",\"height\":\"56\",\"viewBox\":\"0 0 235 56\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"style\":{\"display\":\"block\"},\"children\":[[\"$\",\"defs\",null,{\"children\":[[\"$\",\"mask\",null,{\"id\":\"mask-a-liner-gradient\",\"children\":[\"$\",\"image\",null,{\"href\":\"/images/default-loading.svg\",\"width\":\"235\",\"height\":\"56\",\"style\":{\"filter\":\"brightness(5)\"}}]}],[\"$\",\"linearGradient\",null,{\"id\":\"gradient-a-liner-gradient\",\"x1\":\"0%\",\"y1\":\"0%\",\"x2\":\"100%\",\"y2\":\"30%\",\"children\":[[\"$\",\"stop\",null,{\"offset\":\"0%\",\"stopColor\":\"transparent\"}],[\"$\",\"stop\",null,{\"offset\":\"10%\",\"stopColor\":\"rgba(255,255,255,0.3)\"}],[\"$\",\"stop\",null,{\"offset\":\"40%\",\"stopColor\":\"rgba(255,255,255,1)\"}],[\"$\",\"stop\",null,{\"offset\":\"60%\",\"stopColor\":\"rgba(255,255,255,1)\"}],[\"$\",\"stop\",null,{\"offset\":\"90%\",\"stopColor\":\"rgba(255,255,255,0.3)\"}],[\"$\",\"stop\",null,{\"offset\":\"100%\",\"stopColor\":\"transparent\"}]]}]]}],[\"$\",\"image\",null,{\"href\":\"/images/default-loading.svg\",\"width\":\"235\",\"height\":\"56\"}],[\"$\",\"g\",null,{\"mask\":\"url(#mask-a-liner-gradient)\",\"style\":{\"mixBlendMode\":\"screen\"},\"children\":[\"$\",\"rect\",null,{\"x\":\"-80\",\"y\":\"0\",\"width\":\"100\",\"height\":\"56\",\"fill\":\"url(#gradient-a-liner-gradient)\",\"className\":\"shimmer-rect\"}]}]]}]]}],[],[]],false]},null,false],\"login\":[\"__DEFAULT__\",[\"$\",\"$4\",\"c\",{\"children\":[null,null,[\"$\",\"$L8\",null,{\"children\":[\"$Lc\",\"$Ld\"]}]]}],{},null,false],\"subscription\":[\"__DEFAULT__\",[\"$\",\"$4\",\"c\",{\"children\":[null,null,[\"$\",\"$L8\",null,{\"children\":[\"$Le\",\"$Lf\"]}]]}],{},null,false]},null,false],[\"$\",\"$4\",\"h\",{\"children\":[null,[[\"$\",\"$L10\",null,{\"children\":\"$L11\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]],[\"$\",\"$L12\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$13\",null,{\"fallback\":null,\"children\":\"$L14\"}]}]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$15\",[]],\"s\":false,\"S\":false}\n"])</script><script>self.__next_f.push([1,"c:null\nd:null\ne:null\nf:null\n"])</script><script>self.__next_f.push([1,"2:[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"sizes\":\"any\"}],[\"$\",\"$L16\",null,{\"id\":\"volcano-cache\",\"strategy\":\"beforeInteractive\",\"children\":\"\\n          (function(win, export_obj) {\\n            win['LogAnalyticsObject'] = export_obj;\\n            if (!win[export_obj]) {\\n              var _collect = function() {\\n                _collect.q.push(arguments);\\n              }\\n              _collect.q = _collect.q || [];\\n              win[export_obj] = _collect;                \\n            }\\n            win[export_obj].l = +new Date();\\n          })(window, 'collectEvent');\\n          \"}],[\"$\",\"$L16\",null,{\"async\":true,\"src\":\"https://lf3-data.volccdn.com/obj/data-static/log-sdk/collect/5.0/collect-rangers-v5.2.1.js\",\"strategy\":\"beforeInteractive\"}],[\"$\",\"$L16\",null,{\"id\":\"volcano-init\",\"strategy\":\"beforeInteractive\",\"children\":\"\\n          window.collectEvent('init', {\\n            app_id: window?.location?.hostname === 'www.youware.com' ? 20003943 : 20003944,\\n            channel_domain: 'https://gator.uba.ap-southeast-1.volces.com',\\n            ab_channel_domain: 'https://tab.ab.ap-southeast-1.volces.com',\\n            autotrack: {\\n              pv: true,\\n              click: false,\\n              beat: false,\\n            },\\n            log: true,\\n            enable_debug: false,\\n            enable_ab_test: true,\\n            enable_multilink: false,\\n            enable_ab_visual: false,\\n            enable_stay_duration: true,\\n          });\\n          \"}],[\"$\",\"$L16\",null,{\"src\":\"https://accounts.google.com/gsi/client\",\"strategy\":\"afterInteractive\"}],[\"$\",\"$L16\",null,{\"src\":\"https://r.wdfl.co/rw.js\",\"data-rewardful\":\"f0d856\"}],[\"$\",\"$L16\",null,{\"id\":\"rewardful-queue\",\"strategy\":\"beforeInteractive\",\"children\":\"(function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');\"}]]}],[\"$\",\"body\",null,{\"className\":\"__variable_87c02c\",\"children\":[\"$\",\"$13\",null,{\"fallback\":null,\"children\":[[\"$\",\"$L17\",null,{}],[\"$\",\"$L18\",null,{}],[\"$\",\"$L19\",null,{\"initialEnvInfo\":{\"isMobile\":false},\"children\":[\"$\",\"$L1a\",null,{\"children\":[[\"$\",\"$L1b\",null,{\"userPromise\":\"$@1c\"}],[\"$\",\"$L1d\",null,{\"children\":[\"$\",\"$L1e\",null,{\"children\":[[\"$\",\"$L1f\",null,{\"subscriptionInfoPromise\":\"$@20\"}],[\"$\",\"$L21\",null,{\"children\":[\"$\",\"$L22\",null,{\"children\":[\"$\",\"$L23\",null,{\"children\":[\"$\",\"$L24\",null,{\"children\":[[[],[\"$L25\",\"$2:props:children:1:props:children:props:children:2:props:children:props:children:1:props:children:props:children:1:props:children:props:children:props:children:props:children:0:0\"]],\"$undefined\",\"$undefined\",[\"$\",\"$L26\",null,{}],[\"$\",\"$L27\",null,{}],[\"$\",\"$L28\",null,{}]]}]}]}]}]]}]}]]}]}]]}]}]]}]\n"])</script><script>self.__next_f.push([1,"3:[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"sizes\":\"any\"}],[\"$\",\"$L16\",null,{\"id\":\"volcano-cache\",\"strategy\":\"beforeInteractive\",\"children\":\"\\n          (function(win, export_obj) {\\n            win['LogAnalyticsObject'] = export_obj;\\n            if (!win[export_obj]) {\\n              var _collect = function() {\\n                _collect.q.push(arguments);\\n              }\\n              _collect.q = _collect.q || [];\\n              win[export_obj] = _collect;                \\n            }\\n            win[export_obj].l = +new Date();\\n          })(window, 'collectEvent');\\n          \"}],[\"$\",\"$L16\",null,{\"async\":true,\"src\":\"https://lf3-data.volccdn.com/obj/data-static/log-sdk/collect/5.0/collect-rangers-v5.2.1.js\",\"strategy\":\"beforeInteractive\"}],[\"$\",\"$L16\",null,{\"id\":\"volcano-init\",\"strategy\":\"beforeInteractive\",\"children\":\"\\n          window.collectEvent('init', {\\n            app_id: window?.location?.hostname === 'www.youware.com' ? 20003943 : 20003944,\\n            channel_domain: 'https://gator.uba.ap-southeast-1.volces.com',\\n            ab_channel_domain: 'https://tab.ab.ap-southeast-1.volces.com',\\n            autotrack: {\\n              pv: true,\\n              click: false,\\n              beat: false,\\n            },\\n            log: true,\\n            enable_debug: false,\\n            enable_ab_test: true,\\n            enable_multilink: false,\\n            enable_ab_visual: false,\\n            enable_stay_duration: true,\\n          });\\n          \"}],[\"$\",\"$L16\",null,{\"src\":\"https://accounts.google.com/gsi/client\",\"strategy\":\"afterInteractive\"}],[\"$\",\"$L16\",null,{\"src\":\"https://r.wdfl.co/rw.js\",\"data-rewardful\":\"f0d856\"}],[\"$\",\"$L16\",null,{\"id\":\"rewardful-queue\",\"strategy\":\"beforeInteractive\",\"children\":\"(function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');\"}]]}],[\"$\",\"body\",null,{\"className\":\"__variable_87c02c\",\"children\":[\"$\",\"$13\",null,{\"fallback\":null,\"children\":[[\"$\",\"$L17\",null,{}],[\"$\",\"$L18\",null,{}],[\"$\",\"$L19\",null,{\"initialEnvInfo\":{\"isMobile\":false},\"children\":[\"$\",\"$L1a\",null,{\"children\":[[\"$\",\"$L1b\",null,{\"userPromise\":\"$@29\"}],[\"$\",\"$L1d\",null,{\"children\":[\"$\",\"$L1e\",null,{\"children\":[[\"$\",\"$L1f\",null,{\"subscriptionInfoPromise\":\"$@2a\"}],[\"$\",\"$L21\",null,{\"children\":[\"$\",\"$L22\",null,{\"children\":[\"$\",\"$L23\",null,{\"children\":[\"$\",\"$L24\",null,{\"children\":[[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$2:props:children:1:props:children:props:children:2:props:children:props:children:1:props:children:props:children:1:props:children:props:children:props:children:props:children:0:1\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"login\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"subscription\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"$L26\",null,{}],[\"$\",\"$L27\",null,{}],[\"$\",\"$L28\",null,{}]]}]}]}]}]]}]}]]}]}]]}]}]]}]\n"])</script><script>self.__next_f.push([1,"25:[\"$\",\"div\",null,{\"className\":\"relative flex h-screen max-h-screen min-h-screen\",\"children\":[[\"$\",\"$L2b\",null,{\"initialExpanded\":false}],[\"$\",\"div\",null,{\"className\":\"relative flex h-screen max-h-screen min-h-screen flex-1 flex-col overflow-y-auto\",\"id\":\"page-scroll-div\",\"children\":[[\"$\",\"$L2c\",null,{}],[\"$\",\"main\",null,{\"className\":\"mb-20 flex flex-1 flex-col items-center justify-center px-5\",\"children\":[\"$\",\"$L2d\",null,{\"componentName\":\"Layout\",\"fallback\":[\"$\",\"$L2e\",null,{\"className\":\"h-full\"}],\"children\":[[\"$\",\"h1\",null,{\"className\":\"mb-2 text-[80px] sm:text-[100px] md:text-[128px]\",\"children\":\"404\"}],[\"$\",\"h2\",null,{\"className\":\"text-center text-[28px]/8 sm:text-[32px]/9 md:text-[40px]/10\",\"children\":\"Oops, looks like this page is gone!\"}],[\"$\",\"p\",null,{\"className\":\"mt-3 text-center text-sm text-black/45 sm:text-base\",\"children\":\"Next time, be sure to check out YouWare before it disappears.\"}],[\"$\",\"$L2f\",null,{\"href\":\"/\",\"className\":\"bg-brand mt-12 flex h-12 w-36 cursor-pointer items-center justify-center rounded-[16px] text-sm text-white sm:mt-16 sm:h-14 sm:w-40 sm:text-base md:mt-20\",\"children\":\"Explore More\"}]]}]}]]}]]}]\n"])</script><script>self.__next_f.push([1,"11:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1, maximum-scale=1\"}]]\n9:null\n"])</script><script>self.__next_f.push([1,"20:{\"request_id\":\"35f727f3-6798-4be9-b2cb-c497fe874e5b\",\"message\":\"Success\",\"code\":0,\"data\":{\"uid\":\"6xKVexQa5sVAXdOvceFQk2MK7zq2\",\"subscription\":{\"current_period_end\":null,\"is_vip\":false,\"plan\":\"Free\",\"quotas\":[{\"type\":\"commit\",\"source\":\"subscription\",\"remaining\":5,\"interval\":\"month\",\"limit\":5,\"reset_at\":1754006400}],\"is_subscribing\":false,\"total_remaining\":5,\"price_key\":null,\"next_price_key\":null,\"total_credits\":495,\"credits\":[],\"is_trialing\":false}}}\n2a:{\"request_id\":\"35f727f3-6798-4be9-b2cb-c497fe874e5b\",\"message\":\"Success\",\"code\":0,\"data\":{\"uid\":\"6xKVexQa5sVAXdOvceFQk2MK7zq2\",\"subscription\":{\"current_period_end\":null,\"is_vip\":false,\"plan\":\"Free\",\"quotas\":[{\"type\":\"commit\",\"source\":\"subscription\",\"remaining\":5,\"interval\":\"month\",\"limit\":5,\"reset_at\":1754006400}],\"is_subscribing\":false,\"total_remaining\":5,\"price_key\":null,\"next_price_key\":null,\"total_credits\":495,\"credits\":[],\"is_trialing\":false}}}\n"])</script><div hidden id="S:3"></div><script>$RS=function(a,b){a=document.getElementById(a);b=document.getElementById(b);for(a.parentNode.removeChild(a);a.firstChild;)b.parentNode.insertBefore(a.firstChild,b);b.parentNode.removeChild(b)};$RS("S:3","P:3")</script><script>self.__next_f.push([1,"29:{\"uid\":\"6xKVexQa5sVAXdOvceFQk2MK7zq2\",\"email\":\"bithassniga@gmail.com\",\"metadata\":{\"creationTime\":\"Thu, 24 Apr 2025 04:05:33 GMT\"},\"display_name\":\"Markos Aposporis\",\"photo_url\":\"https://lh3.googleusercontent.com/a/ACg8ocIztE3Z6qOxXZurGJ_KzmxOpFXyxVxEqGd9msJI1qeL983N1Qgf=s96-c\",\"is_anonymous\":false,\"plan\":\"Free\",\"coins\":2,\"role\":\"user\",\"badge\":null,\"ywid\":\"6xKVexQa5sVAXdOvceFQk2MK7zq2\"}\n1c:{\"uid\":\"6xKVexQa5sVAXdOvceFQk2MK7zq2\",\"email\":\"bithassniga@gmail.com\",\"metadata\":{\"creationTime\":\"Thu, 24 Apr 2025 04:05:33 GMT\"},\"display_name\":\"Markos Aposporis\",\"photo_url\":\"https://lh3.googleusercontent.com/a/ACg8ocIztE3Z6qOxXZurGJ_KzmxOpFXyxVxEqGd9msJI1qeL983N1Qgf=s96-c\",\"is_anonymous\":false,\"plan\":\"Free\",\"coins\":2,\"role\":\"user\",\"badge\":null,\"ywid\":\"6xKVexQa5sVAXdOvceFQk2MK7zq2\"}\n"])</script><div hidden id="S:2"></div><script>$RS("S:2","P:2")</script><script>$RB=[];$RV=function(b){$RT=performance.now();for(var a=0;a<b.length;a+=2){var c=b[a],e=b[a+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&g._reactRetry()}}b.length=0};
-$RC=function(b,a){if(a=document.getElementById(a))(b=document.getElementById(b))?(b.previousSibling.data="$~",$RB.push(b,a),2===$RB.length&&(b="number"!==typeof $RT?0:$RT,a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:b+300-a))):a.parentNode.removeChild(a)};$RC("B:1","S:1")</script><script>self.__next_f.push([1,"30:I[37892,[\"8823\",\"static/chunks/3014691f-1222c0d344eae502.js\",\"8888\",\"static/chunks/2e5b0c64-149efd68b2c6114c.js\",\"2873\",\"static/chunks/2873-612bf94e2067ed39.js\",\"6874\",\"static/chunks/6874-00d0f3cf17ffeb2e.js\",\"4277\",\"static/chunks/4277-d92de15dd73ae92a.js\",\"3921\",\"static/chunks/3921-c29fa5635057f34a.js\",\"770\",\"static/chunks/770-6db852574d064351.js\",\"6766\",\"static/chunks/6766-f215184440a41046.js\",\"5649\",\"static/chunks/5649-818607a05118328d.js\",\"1529\",\"static/chunks/1529-30d27d33d02638b1.js\",\"6581\",\"static/chunks/6581-413046209708dc9c.js\",\"6030\",\"static/chunks/6030-f31325ceda869e48.js\",\"5025\",\"static/chunks/5025-c3903149b4ec596d.js\",\"9360\",\"static/chunks/9360-f05039fab3fcb3d1.js\",\"750\",\"static/chunks/750-a9a9a045e4dbfc53.js\",\"9144\",\"static/chunks/app/project/%5Bslug%5D/page-ed504665f2dc7b96.js\"],\"default\"]\n"])</script><script>self.__next_f.push([1,"31:I[38175,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"7:[\"$\",\"$L30\",null,{\"project\":{\"project_id\":\"acfab9b6-c1c3-4e94-b185-9c2c8567e351\",\"project_url\":\"/project/81l057p993\",\"cover_url\":\"https://ik.imagekit.io/yourware/prod/acfab9b6-c1c3-4e94-b185-9c2c8567e351/screenshot_4275.png?tr=w-800,ar-16-9,fo-top,q-75,f-webp\",\"share_img_key\":null,\"share_img_info\":{\"share_img_url\":null,\"share_img_url_with_padding\":null},\"create_time\":1750044816,\"status\":\"published\",\"visibility\":0,\"passcode\":\"$undefined\",\"custom_cover_url\":null,\"title\":\"Maritime Shipyard\",\"interaction\":{\"count\":[{\"interaction_type\":\"salute\",\"count\":0},{\"interaction_type\":\"rofl\",\"count\":0},{\"interaction_type\":\"clap\",\"count\":0},{\"interaction_type\":\"heart-eyes\",\"count\":0},{\"interaction_type\":\"flying-saucer\",\"count\":0},{\"interaction_type\":\"money-with-wings\",\"count\":0},{\"interaction_type\":\"100\",\"count\":0}],\"status\":[{\"interaction_type\":\"salute\",\"status\":false},{\"interaction_type\":\"rofl\",\"status\":false},{\"interaction_type\":\"clap\",\"status\":false},{\"interaction_type\":\"heart-eyes\",\"status\":false},{\"interaction_type\":\"flying-saucer\",\"status\":false},{\"interaction_type\":\"money-with-wings\",\"status\":false},{\"interaction_type\":\"100\",\"status\":false}]},\"description\":\"Leading shipyard offering world-class shipbuilding, repair, and engineering services.\",\"user\":{\"uid\":\"6xKVexQa5sVAXdOvceFQk2MK7zq2\",\"display_name\":\"Markos Aposporis\",\"photo_url\":\"https://lh3.googleusercontent.com/a/ACg8ocIztE3Z6qOxXZurGJ_KzmxOpFXyxVxEqGd9msJI1qeL983N1Qgf=s96-c\",\"is_anonymous\":false,\"ywid\":\"6xKVexQa5sVAXdOvceFQk2MK7zq2\",\"badge\":null,\"user_settings\":null},\"iframe_url\":\"https://acfab9b6-c1c3-4e94-b185-9c2c8567e351--1753988400--ccccf16f.app.yourware.app\",\"view_count\":8,\"remix_count\":1,\"view_user_count\":1,\"remix_user_count\":1,\"comment_count\":0,\"remix_from\":null,\"commit_info\":{\"current_commit_id\":\"f9895c00-51d2-4fdb-a3ba-1eba2b8a5786\",\"release_commit_id\":\"f9895c00-51d2-4fdb-a3ba-1eba2b8a5786\"},\"conversation_id\":\"240e0d7c-693f-4612-afed-57f538fd0194\",\"allow_remix\":true,\"remix_permission\":0,\"moderation_status\":\"pass\",\"allow_download\":true,\"feature_bits\":0,\"slug_prefix\":null,\"subdomain\":\"81l057p993\",\"custom_title\":null,\"community_info\":{\"favorite_count\":0,\"is_favorited\":false},\"source_type\":\"user_create\",\"is_ai_app\":false,\"seo_config\":null,\"need_passcode\":false},\"urlHash\":\"81l057p993\",\"screenStatus\":\"$undefined\",\"enterFrom\":\"share\",\"isMobile\":false,\"anchorCommentId\":\"$undefined\",\"h1SEOContent\":\"$undefined\",\"blogList\":\"$undefined\",\"isBlogProject\":false}]\n"])</script><script>self.__next_f.push([1,"b:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Maritime Shipyard\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Leading shipyard offering world-class shipbuilding, repair, and engineering services.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"robots\",\"content\":\"noindex, follow, nocache\"}],[\"$\",\"meta\",\"3\",{\"name\":\"googlebot\",\"content\":\"noindex, follow, nocache\"}],[\"$\",\"link\",\"4\",{\"rel\":\"canonical\",\"href\":\"https://www.youware.com/project/81l057p993\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:title\",\"content\":\"Maritime Shipyard\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:description\",\"content\":\"Leading shipyard offering world-class shipbuilding, repair, and engineering services.\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:site_name\",\"content\":\"YouWare\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image\",\"content\":\"https://ik.imagekit.io/yourware/prod/acfab9b6-c1c3-4e94-b185-9c2c8567e351/screenshot_4275.png?tr=w-800,ar-16-9,fo-top,q-75,f-webp\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:title\",\"content\":\"Maritime Shipyard\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:description\",\"content\":\"Leading shipyard offering world-class shipbuilding, repair, and engineering services.\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:image\",\"content\":\"https://ik.imagekit.io/yourware/prod/acfab9b6-c1c3-4e94-b185-9c2c8567e351/screenshot_4275.png?tr=w-800,ar-16-9,fo-top,q-75,f-webp\"}],[\"$\",\"link\",\"14\",{\"rel\":\"shortcut icon\",\"href\":\"/icons/favicon.ico\"}],[\"$\",\"link\",\"15\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\"}],[\"$\",\"link\",\"16\",{\"rel\":\"icon\",\"href\":\"/icons/favicon.ico\"}],[\"$\",\"link\",\"17\",{\"rel\":\"apple-touch-icon\",\"href\":\"/icons/favicon.ico\"}],[\"$\",\"$L31\",\"18\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"14:\"$b:metadata\"\n"])</script><title>Maritime Shipyard</title><meta name="description" content="Leading shipyard offering world-class shipbuilding, repair, and engineering services."/><meta name="robots" content="noindex, follow, nocache"/><meta name="googlebot" content="noindex, follow, nocache"/><link rel="canonical" href="https://www.youware.com/project/81l057p993"/><meta property="og:title" content="Maritime Shipyard"/><meta property="og:description" content="Leading shipyard offering world-class shipbuilding, repair, and engineering services."/><meta property="og:site_name" content="YouWare"/><meta property="og:image" content="https://ik.imagekit.io/yourware/prod/acfab9b6-c1c3-4e94-b185-9c2c8567e351/screenshot_4275.png?tr=w-800,ar-16-9,fo-top,q-75,f-webp"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Maritime Shipyard"/><meta name="twitter:description" content="Leading shipyard offering world-class shipbuilding, repair, and engineering services."/><meta name="twitter:image" content="https://ik.imagekit.io/yourware/prod/acfab9b6-c1c3-4e94-b185-9c2c8567e351/screenshot_4275.png?tr=w-800,ar-16-9,fo-top,q-75,f-webp"/><link rel="shortcut icon" href="/icons/favicon.ico"/><link rel="icon" href="/favicon.ico"/><link rel="icon" href="/icons/favicon.ico"/><link rel="apple-touch-icon" href="/icons/favicon.ico"/><script >document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))</script><div hidden id="S:5"><div class="flex h-[100dvh] w-[100vw] flex-col"><div class="flex h-[100dvh] w-full items-center justify-center"><style>
-        @keyframes shimmer {
-          0% { transform: translateX(-80px) skewX(8deg); }
-          100% { transform: translateX(320px) skewX(8deg); }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        .shimmer-rect {
-          animation: shimmer 2s infinite;
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-      </style><svg width="235" height="56" viewBox="0 0 235 56" xmlns="http://www.w3.org/2000/svg" style="display:block"><defs><mask id="mask-a-liner-gradient"><image href="/images/default-loading.svg" width="235" height="56" style="filter:brightness(5)"></image></mask><linearGradient id="gradient-a-liner-gradient" x1="0%" y1="0%" x2="100%" y2="30%"><stop offset="0%" stop-color="transparent"></stop><stop offset="10%" stop-color="rgba(255,255,255,0.3)"></stop><stop offset="40%" stop-color="rgba(255,255,255,1)"></stop><stop offset="60%" stop-color="rgba(255,255,255,1)"></stop><stop offset="90%" stop-color="rgba(255,255,255,0.3)"></stop><stop offset="100%" stop-color="transparent"></stop></linearGradient></defs><image href="/images/default-loading.svg" width="235" height="56"></image><g mask="url(#mask-a-liner-gradient)" style="mix-blend-mode:screen"><rect x="-80" y="0" width="100" height="56" fill="url(#gradient-a-liner-gradient)" class="shimmer-rect"></rect></g></svg></div></div></div><script>$RS("S:5","P:5")</script><script>$RC("B:4","S:4")</script><div hidden id="S:6"></div><script>$RC("B:6","S:6")</script><div hidden id="S:0"></div><
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffd700;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23517c9e" width="1200" height="600"/><path fill="%236b93b3" d="M0 400h1200v200H0z"/><circle fill="%23ffffff" cx="200" cy="150" r="40" opacity="0.3"/><circle fill="%23ffffff" cx="400" cy="120" r="20" opacity="0.2"/><circle fill="%23ffffff" cx="800" cy="180" r="30" opacity="0.25"/></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3c72;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,215,0,0.4);
+        }
+
+        .services {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e3c72;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #2a5298;
+            margin-bottom: 1rem;
+        }
+
+        .about {
+            padding: 80px 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1e3c72;
+        }
+
+        .about-image {
+            background: linear-gradient(45deg, #2a5298, #1e3c72);
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .mobile-menu {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">⚓ Maritime Shipyard</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>World-Class Shipbuilding Excellence</h1>
+                <p>Building the future of maritime industry with precision, innovation, and unmatched quality</p>
+                <a href="facilities.html" class="btn">Explore Our Facilities</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚢</div>
+                    <h3>Ship Construction</h3>
+                    <p>Complete vessel construction from design to delivery, including commercial ships, naval vessels, and specialized maritime craft.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Ship Repair &amp; Maintenance</h3>
+                    <p>Comprehensive repair services, dry dock facilities, and scheduled maintenance programs to keep your fleet operational.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Custom Engineering</h3>
+                    <p>Specialized engineering solutions for unique maritime challenges, including retrofits and custom modifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Maritime Shipyard</h2>
+                    <p>With over 50 years of maritime excellence, we are a leading shipyard committed to delivering world-class vessels and services. Our state-of-the-art facilities and experienced workforce ensure every project meets the highest standards of quality and safety.</p>
+                    <p>From commercial cargo ships to specialized naval vessels, we have the expertise and infrastructure to handle projects of any scale and complexity.</p>
+                </div>
+                <div class="about-image">
+                    <div>🏭 State-of-the-Art Facilities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>© 2024 Maritime Shipyard. All rights reserved.</p>
+            <p>Contact: info@maritimeshipyard.com | +1 (555) 123-4567</p>
+        </div>
+    </footer>
+
+    <script src="https://lib.youware.com/youware-lib-consumer.1752562065.js" id="yourware-lib"></script><script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body></html>
